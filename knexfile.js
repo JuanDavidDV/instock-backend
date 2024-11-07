@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default {
-  development: {
+  //development: {
     client: 'mysql2',
     connection: {
       host: process.env.DB_HOST,
@@ -23,5 +23,5 @@ export default {
     seeds: {
       directory: path.join(__dirname, 'seeds'),
     },
-  }
+  //}
 };
