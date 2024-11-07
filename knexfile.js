@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 
 export default {
   development: {
-    client: 'mysql2',
+    client: 'mysql',
     connection: {
       host: process.env.DB_HOST,
       user: process.env.DB_USER,
