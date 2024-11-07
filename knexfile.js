@@ -4,8 +4,8 @@ import { fileURLToPath } from 'url';
 
 dotenv.config();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const filename = fileURLToPath(import.meta.url);
+const dirname = path.dirname(filename);
 
 export default {
   development: {
@@ -18,10 +18,10 @@ export default {
       charset: "utf8",
     },
     migrations: {
-      directory: path.join(__dirname, 'migrations'),
+      directory: path.join(dirname, 'migrations'),
     },
     seeds: {
-      directory: path.join(__dirname, 'seeds'),
+      directory: path.join(dirname, 'seeds'),
     },
   }
 };
